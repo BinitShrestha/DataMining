@@ -30,8 +30,11 @@ def get_loc(line):
 	return out
 
 def get_date(line):
-	out = int(re.search(r"[0-9]{4,7}", line).group())
-	return out
+	try:
+		line = int(re.search(r"[0-9]{4,7}", line).group())
+	except AttributeError:
+		pass
+	return line
 
 # MAIN
 with open(WIKI_DUMPS) as f:
