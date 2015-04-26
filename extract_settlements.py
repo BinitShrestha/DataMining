@@ -7,8 +7,6 @@
 import re, os, sys, string, json, datetime
 from sys import argv
 
-#script, "filename.txt" = argv
-
 WIKI_DUMPS = "new.txt"
 
 # FUNCTIONS
@@ -147,13 +145,7 @@ with open(WIKI_DUMPS, "r", encoding="utf-8") as f:
 						target.write("\t")
 						target.write(str(latd))
 						target.write("\n")
-						#fo.write(name)
-						#fo.write(latd)
-						#fo.write(longd)
 				infobox = False
 				has_longd = False
 				has_latd = False
 				count = 0
-				#csv = "".join(csv)
-	#with open("file.txt","w",encoding="utf-8") as f:
-	#	f.write(csv)
