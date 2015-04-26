@@ -82,7 +82,7 @@ def same_line_long(line):
 def same_line_latd(line):
 	if ("latm" in line):
 		pos_lat = True
-		if ("NS=N" in line or "NS = N" in line):
+		if ("NS=S" in line or "NS = S" in line):
 			pos_lat = False
 		lat = find_between(line, "latd", "latm")
 		try:		
